@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "./Image";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -6,7 +7,12 @@ function Navbar() {
   return (
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <img src="/logo.png" className="w-8 h-8" alt="" />
+        <Image
+          src="https://ik.imagekit.io/g7gszpv1d/logo.png?updatedAt=1753696265702"
+          alt="Exclusive Logo"
+          w={32}
+          h={32}
+        />
 
         <span>exclog</span>
       </div>
